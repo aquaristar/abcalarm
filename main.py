@@ -10,13 +10,9 @@ from plyer import notification
 from plyer.utils import platform
 from plyer.compat import PY2
 
-class TestApp(App):
-    def build(self):
-        return Button(text='Hello World')
-
-#TestApp().run()
-
-
+import cherrypy
+from multiprocessing import Process
+import time
 
 class NotificationDemo(BoxLayout):
 
@@ -40,14 +36,40 @@ class NotificationDemo(BoxLayout):
                                           'plyer-icon.png')
         notification.notify(**kwargs)
 
-
+from cherrypy.process.plugins import Daemonizer
 class NotificationDemoApp(App):
     def build(self):
+        #cherrypy.quickstart(HelloWorld())
+        #d = Daemonizer(cherrypy.engine)
+        #d.subscribe()
         return NotificationDemo()
 
     def on_pause(self):
         return True
 
 
-if __name__ == '__main__':
+class HelloWorld(object):
+    @cherrypy.expose
+    def index(self):
+        notification.notify("abc", "abc")
+        return "Hello World!"
+
+def webserver():
+    cherrypy.quickstart(HelloWorld())
+    time.sleep(3)
+
+def gui():
     NotificationDemoApp().run()
+    time.sleep(3)
+
+
+if __name__ == '__main__':
+    #cherrypy.quickstart(HelloWorld())
+    #a = Process(target=webserver, name='webserver')
+    #b = Process(target=gui, name='gui')
+    #a.start()
+    #b.start()
+    gui()
+
+
+
