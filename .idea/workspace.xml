@@ -2,13 +2,267 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="949efe75-43ff-465d-a4a7-c53320a9fca4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cherrypy_webapp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AbcAlarm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AbcAlarm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/abcalarm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/abcalarm/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/about-us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/_DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/css/_DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/css/normalize.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/fonts/_DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/js/_DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/js/jquery-1.11.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/js/jquery.nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/_DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shAutoloader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushAS3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushAppleScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushBash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushCSharp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushColdFusion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushCpp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushCss.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushDelphi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushDiff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushErlang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushGroovy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushJScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushJava.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushJavaFX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushPerl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushPhp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushPlain.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushPowerShell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushPython.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushRuby.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushSass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushScala.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushSql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushVb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shBrushXml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/scripts/shLegacy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shCore.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shCoreDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shCoreDjango.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shCoreEclipse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shCoreEmacs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shCoreFadeToGrey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shCoreMDUltra.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shCoreMidnight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shCoreRDark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shThemeDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shThemeDjango.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shThemeEclipse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shThemeEmacs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shThemeFadeToGrey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shThemeMDUltra.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shThemeMidnight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/astral-doc/syntax-highlighter/styles/shThemeRDark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/cdnjs.cloudflare.com/ajax/libs/aos/2.3.3/aos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/cdnjs.cloudflare.com/ajax/libs/aos/2.3.3/aos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/contact_process.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_about.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_about.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_clients.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_clients.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_feature.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_feature.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_footer.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_price.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_price.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_projects.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_projects.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_service.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_service.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_team.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_team.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_testimonials.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_testimonials.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_video.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/_video.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/breadcrumb.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/breadcrumb.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/elements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/human.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/about-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/banner/b1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/banner/b2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/banner/b3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/banner/banner-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/add.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/author.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/blog-details-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/c1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/c2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/c3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/c4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/c5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/c6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/cat-post/cat-post-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/cat-post/cat-post-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/cat-post/cat-post-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/causes/causes-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/causes/causes-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/causes/causes-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/feature-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/home-blog/home-blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/home-blog/home-blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/home-blog/home-blog-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/main-blog/m-blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/main-blog/m-blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/main-blog/m-blog-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/main-blog/m-blog-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/main-blog/m-blog-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/next.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/popular-post/post1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/popular-post/post2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/popular-post/post3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/popular-post/post4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/post-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/post-img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/blog/prev.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/_DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/a2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/disabled-check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/disabled-radio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/f1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/f2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/f3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/f4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/f5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/f6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/f7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/f8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/g1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/g2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/g3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/g4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/g5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/g6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/g7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/g8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/primary-check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/primary-radio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/success-check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/success-radio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/user1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/elements/user2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/portfolio/p1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/portfolio/p2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/portfolio/p3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/portfolio/p4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/portfolio/p5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/quote.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/testimonials/t1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/testimonials/t2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/img/testimonials/t3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/js/contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/js/gmaps.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/js/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/js/jquery.ajaxchimp.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/js/jquery.form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/js/jquery.multiscroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/js/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/js/mail-script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/js/owl-carousel-thumb.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/js/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/js/stellar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/js/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/js/wow.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/prepros-6.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/projects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/scss/_blog.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/scss/_breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/scss/_button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/scss/_contact.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/scss/_elements.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/scss/_feature.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/scss/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/scss/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/scss/_predefine.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/scss/_testimonials.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/scss/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/single-blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/animate-css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/animate-css/wow.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/bootstrap-datepicker/bootstrap-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/bootstrap-datepicker/bootstrap-select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/counter-up/jquery.counterup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/counter-up/jquery.waypoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/isotope/imagesloaded.pkgd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/isotope/isotope-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/jquery-ui/images/ui-icons_444444_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/jquery-ui/images/ui-icons_555555_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/jquery-ui/images/ui-icons_777620_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/jquery-ui/images/ui-icons_777777_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/jquery-ui/images/ui-icons_cc0000_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/jquery-ui/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/jquery-ui/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/jquery-ui/jquery-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/jquery.multiscroll.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/linericon/fonts/Linearicons-Free.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/linericon/fonts/Linearicons-Free.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/linericon/fonts/Linearicons-Free.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/linericon/fonts/Linearicons-Free.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/linericon/fonts/Linearicons-Free.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/linericon/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/nice-select/css/nice-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/nice-select/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/nice-select/js/jquery.nice-select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/nice-select/js/jquery.nice-select.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/owl-carousel/assets/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/owl-carousel/assets/animated.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/owl-carousel/assets/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/owl-carousel/assets/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/owl-carousel/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/owl-carousel/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/owl-carousel/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/popup/jquery.magnific-popup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/popup/magnific-popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/scroll/jquery.mCustomScrollbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/scroll/jquery.mCustomScrollbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/scroll/jquery.nicescroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/scroll/mCSB_buttons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/swiper/css/swiper.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/static/vendors/swiper/js/swiper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/templates/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/templates/_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mikezeen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mikezeen/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mikezeen/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../mikezeen/templates/index.html" afterDir="false" />
     </list>
@@ -21,10 +275,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="28" column="28" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/abcalarm/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            <state relative-caret-position="690">
+              <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -45,7 +311,7 @@
         <entry file="file://$PROJECT_DIR$/webapp/abcalarm/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -53,32 +319,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/templates/_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="690">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/manage.py">
+        <entry file="file://$PROJECT_DIR$/webapp/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-              <folding>
-                <element signature="e#22#31#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="708">
+              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webapp/templates/index.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/templates/alarm_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="79" selection-start-line="6" selection-start-column="79" selection-end-line="6" selection-end-column="79" />
+            <state relative-caret-position="230">
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="14" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/templates/blank">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -121,8 +393,11 @@
         <option value="$PROJECT_DIR$/webapp/webapp/urls.py" />
         <option value="$PROJECT_DIR$/webapp/abcalarm/models.py" />
         <option value="$PROJECT_DIR$/webapp/abcalarm/forms.py" />
-        <option value="$PROJECT_DIR$/webapp/abcalarm/views.py" />
+        <option value="$PROJECT_DIR$/webapp/templates/blank" />
+        <option value="$PROJECT_DIR$/webapp/static/vendors/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/webapp/templates/index.html" />
+        <option value="$PROJECT_DIR$/webapp/abcalarm/views.py" />
+        <option value="$PROJECT_DIR$/webapp/templates/_base.html" />
       </list>
     </option>
   </component>
@@ -154,19 +429,20 @@
               <item name="AbcAlarm" type="b2602c69:ProjectViewProjectNode" />
               <item name="AbcAlarm" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="abcalarm" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AbcAlarm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AbcAlarm" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AbcAlarm" type="b2602c69:ProjectViewProjectNode" />
               <item name="AbcAlarm" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AbcAlarm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AbcAlarm" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -288,7 +564,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3296582" />
       <window_info anchor="bottom" auto_hide="true" id="Event Log" order="8" sideWeight="0.50052685" side_tool="true" weight="0.3693495" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.3296582" />
-      <window_info anchor="bottom" auto_hide="true" x="805" y="683" width="1006" height="332" id="Terminal" order="10" type="FLOATING" visible="true" weight="0.3693495" />
+      <window_info anchor="bottom" auto_hide="true" x="1240" y="101" width="638" height="575" id="Terminal" order="10" type="FLOATING" visible="true" weight="0.3693495" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -358,15 +634,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/webapp/views.py" />
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/abcalarm/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -404,27 +671,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/abcalarm/models.py">
+    <entry file="file://$PROJECT_DIR$/webapp/templates/blank">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="184">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/abcalarm/forms.py">
+    <entry file="file://$PROJECT_DIR$/webapp/static/vendors/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/templates/_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="115">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -438,10 +695,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/abcalarm/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/abcalarm/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/abcalarm/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        <state relative-caret-position="690">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -450,8 +734,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="79" selection-start-line="6" selection-start-column="79" selection-end-line="6" selection-end-column="79" />
+        <state relative-caret-position="708">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/templates/alarm_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="14" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/templates/_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>

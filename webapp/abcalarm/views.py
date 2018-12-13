@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from .forms import AlarmForm
 from .models import Alarm
+from plyer import notification
+from plyer.compat import PY2
 
 
 # Create your views here.
@@ -18,8 +20,18 @@ def index(request):
 def alarm(request):
     try:
         if request.method == "POST":
-            form = AlarmForm(request.POST)
+            new_alarm = Alarm()
+            form = AlarmForm(request.POST, instance=new_alarm)
             if form.is_valid():
+                kwargs = {
+                    'app_name': 'ABC Warehouse',
+                    'title': new_alarm.title,
+                    'message': new_alarm.message,
+                    'ticker': 'r',
+                    'app_icon': './static/ico/plyer-icon.ico',
+                    'timeout': 10,
+                }
+                notification.notify(**kwargs)
                 form.save()
                 result = "ok"
             else:
