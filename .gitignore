@@ -116,3 +116,6 @@ dmypy.json
 
 examples
 webserver.build
+.vs
+msnet/webapp-manager/webapp-manager/bin
+inno/Output

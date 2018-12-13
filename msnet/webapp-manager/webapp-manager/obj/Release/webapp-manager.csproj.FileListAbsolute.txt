@@ -1,0 +1,10 @@
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\bin\Release\webapp-manager.exe.config
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\bin\Release\webapp-manager.exe
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\bin\Release\webapp-manager.pdb
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\obj\Release\webapp_manager.AbcAlarm.resources
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\obj\Release\webapp_manager.Properties.Resources.resources
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\obj\Release\webapp-manager.csproj.GenerateResource.cache
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\obj\Release\webapp-manager.csproj.CoreCompileInputs.cache
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\obj\Release\webapp-manager.exe
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\obj\Release\webapp-manager.pdb
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\obj\Release\webapp-manager.csprojAssemblyReference.cache
