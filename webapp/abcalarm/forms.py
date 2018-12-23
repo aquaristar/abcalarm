@@ -7,4 +7,4 @@ class AlarmForm(ModelForm):
 
     class Meta:
         model = Alarm
-        fields = ['title', 'message', 'status']
+        fields = ['title', 'message', 'alarm_type', 'url', 'status']

@@ -19,4 +19,5 @@ from .views import *
 urlpatterns = [
     url(r'^$', index, name="index"),
     url(r'^alarm/$', alarm, name="alarm"),
+    url(r'^checked/(?P<pk>\d+)/$', checked_alarm, name="checked"),
 ]

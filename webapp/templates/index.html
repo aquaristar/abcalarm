@@ -6,7 +6,7 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">ABC Warehouse</a>
+            <a class="navbar-brand" href="#">ABCWarehouse</a>
         </div>
         <!--<ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">Home</a></li>
@@ -16,27 +16,65 @@
         </ul>-->
     </div>
 </nav>
-<div class="container p-lg">
-    <h3 class="text-muted">Scheduled Alarms</h3>
-    <ul class="list-group">
-        {% for alarm in alarm_list %}
-        <li class="list-group-item" style="padding: 0px;">
-            <div class="row">
-                <div class="col-lg-3 col-xs-3">
-                    <h5 class=""><span class="pull-right">{{alarm.created_date}}</span></h5>
-                    </br>
-                    <h5 class="text-muted"><span class="pull-right">17:00</span></h5>
-                </div>
-                <div class="col-lg-9 col-xs-9" style="border-left: 3px solid #659df7;">
-                    <h4>{{alarm.title}} <span class="label label-default"
-                                              style="font-size: 10px;">{{alarm.status}}</span></h4>
-                    <small>{{alarm.message}}</small>
-                    <p class="text-muted pull-right" style="margin-right: 5px;">in 1 hr, 6 mins</p>
-                </div>
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
+<div class="container">
+    <div class="row">
+        <div class="col-8 ml-auto mr-auto my-5 ">
+            <ul class="nav nav-tabs ">
+                <li class="nav-item ">
+                    <a class="nav-link active rounded-0" href="#">Total : {{total}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-0" href="#">New : {{new}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-0" href="#">Checked : {{checked}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-0 disabled" href="#">Today : {{today}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-0 disabled" href="#">Yesterday : {{yesterday}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
+    <div class="row">
+        <ul class="timeline">
+            {% for alarm in alarm_list %}
+
+            <li class="{% if forloop.counter|divisibleby:2 %} timeline {% else %} timeline-inverted {% endif %}">
+                <div class="timeline-badge  {% if alarm.status == 'new' %} info {% endif %}">
+                    <a {% if alarm.status == 'new' %} href="/abcalarm/checked/{{alarm.id}}" {% else %} disabled="disabled" {% endif %}>
+                    <i class="glyphicon {% if alarm.status == 'new' %} glyphicon-credit-card {% else %} glyphicon-check {% endif %}"></i>
+                    </a>
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">{{alarm.title}}</h4>
+                        <p>
+                            <small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{alarm.created_date}}
+                            </small>
+                        </p>
+                    </div>
+                    <div class="timeline-body">
+                        {% if alarm.alarm_type == 'video' %}
+                        <video width="100%" controls>
+                            <source src="{{alarm.url}}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        {% elif alarm.alarm_type == 'image' %}
+                        <img src="{{alarm.url}}" alt="Northern Lights" width="100%">
+                        {% elif alarm.url == 'attached' %}
+                        <a href="{{alarm.url}}" download> Download </a>
+                        {% endif %}
+                        <p>{{alarm.message}}</p>
+                    </div>
+                </div>
+            </li>
+
+            {% endfor %}
+        </ul>
+    </div>
+</div>
 {% endblock %}

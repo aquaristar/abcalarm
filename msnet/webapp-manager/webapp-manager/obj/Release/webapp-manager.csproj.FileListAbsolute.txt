@@ -8,3 +8,13 @@ D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\obj\Release\weba
 D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\obj\Release\webapp-manager.exe
 D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\obj\Release\webapp-manager.pdb
 D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\obj\Release\webapp-manager.csprojAssemblyReference.cache
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\bin\Release\EntityFramework.dll
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\bin\Release\EntityFramework.SqlServer.dll
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\bin\Release\System.Data.SQLite.dll
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\bin\Release\System.Data.SQLite.EF6.dll
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\bin\Release\System.Data.SQLite.Linq.dll
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\bin\Release\EntityFramework.xml
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\bin\Release\EntityFramework.SqlServer.xml
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\bin\Release\System.Data.SQLite.xml
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\bin\Release\System.Data.SQLite.dll.config
+D:\PycharmProjects\AbcAlarm\msnet\webapp-manager\webapp-manager\obj\Release\webapp-manager.csproj.CopyComplete
