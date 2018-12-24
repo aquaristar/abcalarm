@@ -161,3 +161,20 @@ a {
 .timeline-body > p + p {
   margin-top: 5px;
 }
+
+.nav-tabs{
+  border-bottom: 2px solid #fff;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+  margin-left: 0px;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default{
+  background-color: #26282c;
+  border-color: #e7e7e7;
+}

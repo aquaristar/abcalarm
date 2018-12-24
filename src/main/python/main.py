@@ -1,6 +1,6 @@
 import sys
 
-from fbs_runtime.application_context import ApplicationContext
+from fbs_runtime.application_context import ApplicationContext, cached_property
 from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QPushButton, QAction
 from PyQt5 import QtCore, QtGui, QtWidgets
 import webbrowser
@@ -61,6 +61,8 @@ class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
         menu = QtWidgets.QMenu(parent)
         openAlarmViewerAction = menu.addAction("Open AlarmViewer")
         openAlarmViewerAction.triggered.connect(self.openAlarmViewer)
+        updateAction = menu.addAction("Update")
+        updateAction.triggered.connect(self.updateAction)
         exitAction = menu.addAction("Exit")
         exitAction.triggered.connect(parent.close)
         self.setContextMenu(menu)
@@ -68,12 +70,18 @@ class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
     def openAlarmViewer(self):
         webbrowser.open('http://localhost:7000')
 
+    def updateAction(self):
+        print("update")
+
 class AppContext(ApplicationContext):           # 1. Subclass ApplicationContext
-    def run(self):                              # 2. Implement run()
+
+    def run(self):
+        #print(self['version'])# 2. Implement run()
+        self.app.a
         window = QMainWindow()
-        #window.setWindowTitle("pyqtalarm")
-        #window.resize(250, 150)
-        #window.show()
+        window.setWindowTitle("pyqtalarm")
+        window.resize(250, 150)
+        window.show()
         trayIcon = SystemTrayIcon(QtGui.QIcon(self.app_icon), window)
         trayIcon.show()
         #serverThread = ServerThread(window)
@@ -82,5 +90,6 @@ class AppContext(ApplicationContext):           # 1. Subclass ApplicationContext
 
 if __name__ == '__main__':
     appctxt = AppContext()                      # 4. Instantiate the subclass
+    appctxt.
     exit_code = appctxt.run()                   # 5. Invoke run()
     sys.exit(exit_code)
