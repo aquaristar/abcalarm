@@ -1,0 +1,41 @@
+{% extends '_base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<!--================ Left Area =================-->
+<!--<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">ABC Warehouse</a>
+        </div>
+        &lt;!&ndash;<ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>&ndash;&gt;
+    </div>
+</nav>-->
+<div class="container">
+  <div class="page-header">
+    <h1 id="timeline">ABCWarehouse Alarm List</h1>
+  </div>
+  <ul class="timeline">
+      {% for alarm in alarm_list %}
+       <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">{{alarm.title}}</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{alarm.created_date}}</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>{{alarm.message}}</p>
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

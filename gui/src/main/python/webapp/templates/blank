@@ -1,0 +1,9 @@
+{% extends '_base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<!--================ Left Area =================-->
+	{% for alarm in alarm_list %}
+		{{alarm.title}} {{alarm.message}} {{alarm.created_date}} {{alarm.status}}<br>
+	{% endfor %}
+{% endblock %}
