@@ -128,11 +128,24 @@ class Main(QMainWindow):
 
 class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
 
+<<<<<<< HEAD
     def __init__(self, icon, parent=None):        
         self.bootWebApp()
         
         self.main = Main()
 
+=======
+    def __init__(self, icon, parent=None):
+        s = subprocess.check_output('tasklist', shell=True)
+        print(s)
+        if "webapp.exe" in str(s):
+            print(s)
+            subprocess.call("taskkill /f /IM webapp.exe")
+
+        self.proc = subprocess.Popen(['dist/webapp/webapp', 'runserver', '0.0.0.0:8000'], stdout=subprocess.PIPE,
+                                stderr=subprocess.STDOUT)
+        self.main = Main()
+>>>>>>> b9e45f1492f954b5dfe1be4fd585e54cdeed574f
         QtWidgets.QSystemTrayIcon.__init__(self, icon, parent)
         menu = QtWidgets.QMenu(parent)
         openAlarmViewerAction = menu.addAction("View Alarms")
@@ -142,6 +155,7 @@ class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
         aboutAction = menu.addAction("About")
         aboutAction.triggered.connect(self.aboutApp)
         exitAction = menu.addAction("Exit")
+<<<<<<< HEAD
         exitAction.triggered.connect(self.exitApp) #parent.close        
         self.setContextMenu(menu)
 
@@ -155,6 +169,11 @@ class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
         self.proc = subprocess.Popen(['dist/webapp/webapp', 'runserver', '0.0.0.0:8000'], stdout=subprocess.PIPE,
                                 stderr=subprocess.STDOUT)
 
+=======
+        exitAction.triggered.connect(self.exitApp) #parent.close
+        self.setContextMenu(menu)
+
+>>>>>>> b9e45f1492f954b5dfe1be4fd585e54cdeed574f
     def openAlarmViewer(self):
         webbrowser.open('http://localhost:8000')
 
