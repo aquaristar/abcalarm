@@ -24,3 +24,8 @@ class Alarm(models.Model):
 
     def __str__(self):
         return self.status + '->' + self.title
+
+class Config(models.Model):
+    id = models.AutoField(primary_key=True)
+    code = models.CharField(max_length=200, blank=True, null=True)
+    value = models.CharField(max_length=500, blank=True, null=True)

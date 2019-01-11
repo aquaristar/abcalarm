@@ -1,4 +1,4 @@
-import sys, os, subprocess, signal
+import sys, os, subprocess, signal, platform
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QGridLayout, QWidget, QCheckBox, QSystemTrayIcon, \
     QSpacerItem, QSizePolicy, QMenu, QAction, QStyle, qApp, QTableWidget, QTableWidgetItem, QMessageBox, \
     QTableView, QWidget, QPushButton, QVBoxLayout
@@ -89,7 +89,7 @@ class Main(QMainWindow):
         #self.model = QtSql.QSqlQueryModel()
         #self.model.setQuery("select * from abcalarm_alarm")
         #self.model.query()
-        print(self.model)
+        
         self.model.setHeaderData(0, QtCore.Qt.Horizontal, "ID")
         self.model.setHeaderData(1, QtCore.Qt.Horizontal, "Title")
         self.model.setHeaderData(2, QtCore.Qt.Horizontal, "Content")
@@ -128,9 +128,9 @@ class Main(QMainWindow):
 
 class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
 
-    def __init__(self, icon, parent=None):        
-        self.bootWebApp()
-        
+    def __init__(self, icon, parent=None):
+        self.startWebApp()
+
         self.main = Main()
 
         QtWidgets.QSystemTrayIcon.__init__(self, icon, parent)
@@ -145,21 +145,23 @@ class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
         exitAction.triggered.connect(self.exitApp) #parent.close        
         self.setContextMenu(menu)
 
-    def bootWebApp(self):
-        s = subprocess.check_output('tasklist', shell=True)
-        print(s)
-        if "webapp.exe" in str(s):
-            print(s)
-            subprocess.call("taskkill /f /IM webapp.exe")
+    def startWebApp(self):
+        print(os.name)
+        print(platform.system())
+        self.stopWebApp()
+        self.proc = subprocess.Popen(['dist\\webapp\\webapp', 'runserver', '0.0.0.0:8000'], stdout=subprocess.PIPE, shell=False)
 
-        self.proc = subprocess.Popen(['dist/webapp/webapp', 'runserver', '0.0.0.0:8000'], stdout=subprocess.PIPE,
-                                stderr=subprocess.STDOUT)
+    def stopWebApp(self):
+        s = subprocess.check_output('tasklist', shell=True)
+        #print(s)
+        if "webapp.exe" in str(s):
+            #print(s)
+            subprocess.call("taskkill /f /IM webapp.exe")
 
     def openAlarmViewer(self):
         webbrowser.open('http://localhost:8000')
 
     def updateAlarmClient(self):
-        print("update")
         self.showMessage(
             "Tray Program",
             "Application was minimized to Tray",
@@ -168,7 +170,9 @@ class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
         )
 
     def exitApp(self):
-        os.killpg(os.getpgid(self.proc.pid), signal.SIGTERM)
+        #os.killpg(os.getpgid(self.proc.pid), signal.SIGTERM)
+        #self.proc.kill()
+        self.stopWebApp()
         QtCore.QCoreApplication.exit()
 
     def aboutApp(self):
@@ -180,8 +184,10 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     app.setStyleSheet(qdarkgraystyle.load_stylesheet())
     w = QtWidgets.QWidget()
+
     trayIcon = SystemTrayIcon(QtGui.QIcon("alarm.ico"), w)
-    trayIcon.show()
+    
+    #trayIcon.show()
     #main = Main()
     #main.show()
     #subprocess.call("taskkill /f /IM webapp.exe")
