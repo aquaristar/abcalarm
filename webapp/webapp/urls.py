@@ -4,6 +4,7 @@ from django.views.generic import RedirectView
 from django.core.urlresolvers import reverse_lazy
 from django.conf import settings
 from django.conf.urls.static import static
+import abcalarm
 
 urlpatterns = [
     # Examples:
