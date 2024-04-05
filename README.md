@@ -1,4 +1,4 @@
-# ABCWarehouse Alarm Client software
+# Alarm Client software
 Python 3.7.1, PyInstaller 3.3.1, Plyer 1.3.2, Django 1.8, SQLite 
 C# .NET Windows Form App
 Ubuntu Shell
